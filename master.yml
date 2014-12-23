@@ -1,0 +1,18 @@
+- include: git.yml
+  vars:
+    git:
+      user:
+        fullname: 'Gilles Cornu'
+        email:    'git@gilles.cornu.name'
+
+- include: virtualbox.yml
+  vars:
+    virtualbox:
+      version: 4.3.20
+      build:   96996
+
+- include: vagrant.yml
+  vars:
+    vagrant:
+      version: 1.7.1
+
