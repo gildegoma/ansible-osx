@@ -7,6 +7,7 @@
   tags: homebrew-extras
 
 - include: git.yml
+  tags: git
   vars:
     git:
       user:
@@ -18,12 +19,14 @@
 ################################################
 
 - include: virtualbox.yml
+  tags: virtualbox
   vars:
     virtualbox:
       version: 4.3.20
       build:   96996
 
 - include: vagrant.yml
+  tags: vagrant
   vars:
     vagrant:
       version: 1.7.1
