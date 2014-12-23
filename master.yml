@@ -1,9 +1,21 @@
+
+################################################
+# Base Tools
+################################################
+
+- include: homebrew-extras.yml
+  tags: homebrew-extras
+
 - include: git.yml
   vars:
     git:
       user:
         fullname: 'Gilles Cornu'
         email:    'git@gilles.cornu.name'
+
+################################################
+# Virtualization Tools
+################################################
 
 - include: virtualbox.yml
   vars:
@@ -16,3 +28,9 @@
     vagrant:
       version: 1.7.1
 
+################################################
+# IDE, Editor, ...
+################################################
+
+- include: intellij-idea.yml
+  tags: intellij-idea

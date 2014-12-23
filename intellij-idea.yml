@@ -1,0 +1,7 @@
+---
+- hosts: workstation
+
+  tasks:
+  - name: install intellij idea ultimate edition
+    command: brew cask install intellij-idea
+

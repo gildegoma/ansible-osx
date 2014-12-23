@@ -1,0 +1,7 @@
+---
+- hosts: workstation
+
+  tasks:
+    - name: install homebrew cask 
+      command: brew install caskroom/cask/brew-cask
+
