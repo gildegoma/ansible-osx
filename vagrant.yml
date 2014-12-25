@@ -1,3 +1,11 @@
 ---
 - name: install vagrant
-  homebrew: name=vagrant
+  command: brew cask install vagrant
+
+- name: install vagrant plugins
+  command: vagrant plugin install {{ item }}
+  with_items: battleschool.vagrant.plugins
+
+- name: update vagrant plugins
+  command: vagrant plugin update
+  when: battleschool.vagrant.plugins

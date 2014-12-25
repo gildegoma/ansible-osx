@@ -3,6 +3,11 @@ battleschool:
   homebrew:        todo?
   homebrew_extras: yes
   intellij_idea:   yes
-  vagrant:         yes
+  vagrant:         
+    plugins:
+      - vagrant-cachier
+      - vagrant-hostmanager
+      - vagrant-digitalocean
+      - vagrant-vbguest
   virtualbox:      yes
 
