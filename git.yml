@@ -1,6 +1,9 @@
 ---
 - name: install git
-  homebrew: name=git state=latest update_homebrew=yes
+  homebrew: name=git state=latest
+
+- name: install bash completion
+  homebrew: name=bash-completion state=latest
 
 - name: check if git global settings are already set
   command: git config --global --list

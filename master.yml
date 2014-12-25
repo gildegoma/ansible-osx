@@ -3,6 +3,18 @@
   tasks:
 
 ################################################
+# First things
+################################################
+
+  - name: update homebrew formulaes and upgrade already installed software
+    homebrew: update_homebrew=yes upgrade_all=yes
+    tags: homebrew_upgrade_all
+    when: battleschool.homebrew.update
+
+  - include: home.yml
+    tags: home
+
+################################################
 # Base Tools
 ################################################
 
@@ -12,7 +24,7 @@
 
   - include: git.yml
     tags: git
-    when: "battleschool.git == 'blalbla'"
+    when: battleschool.git
     vars:
       git:
         user:
