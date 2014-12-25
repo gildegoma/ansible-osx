@@ -1,0 +1,8 @@
+battleschool:
+  git:         no
+  homebrew:
+    core:      yes
+    extras:    no
+  vagrant:     yes
+  virtualbox:  yes
+

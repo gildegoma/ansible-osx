@@ -1,10 +1,8 @@
 # TODO add some idempotence creates conditions
 ---
-- hosts: workstation
+- name: add homebrew/versions tap
+  command: brew tap homebrew/versions
 
-  tasks:
-    - name: add homebrew/versions tap
-      command: brew tap homebrew/versions
-    - name: install homebrew cask 
-      command: brew install caskroom/cask/brew-cask
+- name: install homebrew cask
+  command: brew install caskroom/cask/brew-cask
 
