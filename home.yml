@@ -1,0 +1,3 @@
+- name: compose bash_profile file
+  template: src=templates/home/dot_bash_profile.j2
+            dest={{ ansible_env.HOME }}/.bash_profile
