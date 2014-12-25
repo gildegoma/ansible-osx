@@ -1,8 +1,9 @@
 battleschool:
-  git:         no
+  git:           yes
   homebrew:
-    core:      yes
-    extras:    no
-  vagrant:     yes
-  virtualbox:  yes
+    core:        yes
+    extras:      yes
+  intellij_idea: yes
+  vagrant:       yes
+  virtualbox:    yes
 

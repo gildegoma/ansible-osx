@@ -1,7 +1,3 @@
 ---
-- hosts: workstation
-
-  tasks:
-    - name: install vagrant
-      homebrew: name=vagrant
-
+- name: install vagrant
+  homebrew: name=vagrant
