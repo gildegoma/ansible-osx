@@ -6,10 +6,12 @@
 # Base Tools
 ################################################
 
-  - include: homebrew-extras.yml
-    when: battleschool.homebrew.extras
+  - include: homebrew_extras.yml
+    tags: homebrew_extras
+    when: battleschool.homebrew_extras
 
   - include: git.yml
+    tags: git
     when: "battleschool.git == 'blalbla'"
     vars:
       git:
@@ -22,6 +24,7 @@
 ################################################
 
   - include: virtualbox.yml
+    tags: virtualbox
     when: battleschool.virtualbox
     vars:
       virtualbox:
@@ -29,6 +32,7 @@
         build:   96996
 
   - include: vagrant.yml
+    tags: vagrant
     when: battleschool.vagrant
     vars:
       vagrant:
