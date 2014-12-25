@@ -1,7 +1,7 @@
 battleschool:
   git:             yes
   homebrew:
-    update:        no
+    upgrade_all:   no
   homebrew_extras: yes
   intellij_idea:   yes
   vagrant:         

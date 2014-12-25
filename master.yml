@@ -9,7 +9,7 @@
   - name: update homebrew formulaes and upgrade already installed software
     homebrew: update_homebrew=yes upgrade_all=yes
     tags: homebrew_upgrade_all
-    when: battleschool.homebrew.update
+    when: battleschool.homebrew.upgrade_all
 
   - include: home.yml
     tags: home
