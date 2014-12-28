@@ -4,6 +4,8 @@ battleschool:
     upgrade_all:   no
   homebrew_extras: yes
   intellij_idea:   yes
+  nodejs:          yes
+  sourcetree:      yes
   vagrant:         
     plugins:
       - vagrant-cachier

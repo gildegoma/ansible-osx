@@ -31,6 +31,21 @@
           fullname: 'Gilles Cornu'
           email:    'git@gilles.cornu.name'
 
+  - include: nodejs.yml
+    tags: nodejs
+    when: battleschool.nodejs
+    vars:
+      nodejs:
+        global_packages:
+          - bower
+          - grunt-cli
+          - git-travis
+          - yo
+
+  - include: sourcetree.yml
+    tags: sourcetree
+    when: battleschool.sourcetree
+
 ################################################
 # Virtualization Tools
 ################################################
