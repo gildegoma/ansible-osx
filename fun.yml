@@ -1,0 +1,7 @@
+---
+
+- name: install some casks for leisure and fun
+  command: brew cask install {{ item }}
+  with_items:
+    - spotify
+

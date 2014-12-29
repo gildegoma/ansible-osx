@@ -72,3 +72,11 @@
   - include: intellij_idea.yml
     tags: intellij_idea
     when: battleschool.intellij_idea
+
+################################################
+# Mandatory Optionals
+################################################
+
+  - include: fun.yml
+    tags: fun
+    when: battleschool.fun
