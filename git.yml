@@ -31,3 +31,8 @@
 - name: set git to use the osxkeychain credential helper
   command: git config --global credential.helper osxkeychain
   when: git_global_settings.rc == 128
+
+- name: install more git/github goodies via homebrew
+  homebrew: name={{ item }} state=latest
+  with_items:
+    - hub
