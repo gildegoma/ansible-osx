@@ -10,6 +10,10 @@
   ignore_errors: yes
   register: git_global_settings
 
+- name: setup colors in git
+  command: git config --global color.ui true
+  when: git_global_settings.rc == 128
+
 - name: setup git user name
   command: git config --global user.name "{{ git.user.fullname }}"
   when: git_global_settings.rc == 128
