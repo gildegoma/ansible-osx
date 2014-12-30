@@ -9,6 +9,7 @@ battleschool:
   intellij_idea:   yes
   network_tools:   yes
   nodejs:          yes
+  packer:          yes
   sourcetree:      yes
   sublimetext:     yes
   vagrant:         

@@ -1,0 +1,4 @@
+---
+
+- name: install packer
+  command: brew cask install packer

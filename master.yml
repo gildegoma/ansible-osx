@@ -53,6 +53,10 @@
 # Virtualization Tools
 ################################################
 
+  - include: packer.yml
+    tags: packer
+    when: battleschool.packer
+
   - include: virtualbox.yml
     tags: virtualbox
     when: battleschool.virtualbox
