@@ -73,6 +73,10 @@
     tags: intellij_idea
     when: battleschool.intellij_idea
 
+  - include: sublimetext.yml
+    tags: sublimetext
+    when: battleschool.sublimetext
+
 ################################################
 # Mandatory Optionals
 ################################################
