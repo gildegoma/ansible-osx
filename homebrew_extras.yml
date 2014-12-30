@@ -1,7 +1,10 @@
-# TODO add some idempotence creates conditions
 ---
-- name: add homebrew/versions tap
-  command: brew tap homebrew/versions
+
+- name: tap external homebrew repositories
+  homebrew_tap: tap={{ item }}
+  with_items:
+    - homebrew/versions
+    - homebrew/completions
 
 - name: install homebrew cask
   command: brew install caskroom/cask/brew-cask

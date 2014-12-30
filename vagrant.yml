@@ -1,6 +1,9 @@
 ---
 - name: install vagrant
-  command: brew cask install vagrant
+  homebrew_cask: name=vagrant
+
+- name: install vagrant bash completion
+  homebrew: name=vagrant-completion
 
 - name: install vagrant plugins
   command: vagrant plugin install {{ item }}
