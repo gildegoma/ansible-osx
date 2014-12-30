@@ -11,12 +11,6 @@
     tags: homebrew_upgrade_all
     when: battleschool.homebrew.upgrade_all
 
-  - include: home.yml
-    tags: home
-
-  - include: network_tools.yml
-    tags: network_tools
-
 ################################################
 # Base Tools
 ################################################
@@ -24,6 +18,12 @@
   - include: homebrew_extras.yml
     tags: homebrew_extras
     when: battleschool.homebrew_extras
+
+  - include: editor_tools.yml
+    tags: editor_tools
+
+  - include: network_tools.yml
+    tags: network_tools
 
   - include: git.yml
     tags: git
@@ -91,3 +91,10 @@
   - include: spotify.yml
     tags: spotify
     when: battleschool.spotify
+
+################################################
+# Last Things
+################################################
+
+  - include: home.yml
+    tags: home

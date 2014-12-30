@@ -2,6 +2,7 @@ battleschool:
 
   # developer tools
 
+  editor_tools:    yes
   git:             yes
   homebrew:
     upgrade_all:   no
