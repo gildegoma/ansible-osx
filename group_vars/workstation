@@ -1,5 +1,7 @@
 battleschool:
-  fun:             yes
+
+  # developer tools
+
   git:             yes
   homebrew:
     upgrade_all:   no
@@ -15,3 +17,6 @@ battleschool:
       - vagrant-vbguest
   virtualbox:      yes
 
+  # nice to have:
+
+  spotify:         yes

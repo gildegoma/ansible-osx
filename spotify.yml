@@ -1,0 +1,5 @@
+---
+
+- name: install spotify
+  command: brew cask install spotify
+
