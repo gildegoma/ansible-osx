@@ -7,6 +7,7 @@ battleschool:
     upgrade_all:   no
   homebrew_extras: yes
   intellij_idea:   yes
+  network_tools:   yes
   nodejs:          yes
   sourcetree:      yes
   sublimetext:     yes

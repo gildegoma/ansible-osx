@@ -14,6 +14,9 @@
   - include: home.yml
     tags: home
 
+  - include: network_tools.yml
+    tags: network_tools
+
 ################################################
 # Base Tools
 ################################################
