@@ -6,6 +6,8 @@
     - homebrew/versions
     - homebrew/completions
 
+# TODO add some idempotence creates conditions
+# TODO why homebrew module fails ...?
 - name: install homebrew cask
   command: brew install caskroom/cask/brew-cask
 
