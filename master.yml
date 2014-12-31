@@ -93,6 +93,14 @@
     when: battleschool.spotify
 
 ################################################
+# Office Material
+################################################
+
+  - include: libreoffice.yml
+    tags: libreoffice
+    when: battleschool.libreoffice
+
+################################################
 # Last Things
 ################################################
 
