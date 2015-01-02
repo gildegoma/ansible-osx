@@ -19,6 +19,9 @@
     tags: homebrew_extras
     when: battleschool.homebrew_extras
 
+  - include: shell_tools.yml
+    tags: shell_tools
+
   - include: editor_tools.yml
     tags: editor_tools
 
