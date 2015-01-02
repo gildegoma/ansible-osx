@@ -1,4 +1,4 @@
 ---
 
 - name: install packer
-  command: brew cask install packer
+  homebrew_cask: name=packer

@@ -1,5 +1,5 @@
 ---
 
 - name: install sublimetext
-  command: brew cask install sublime-text
+  homebrew_cask: name=sublime-text
 

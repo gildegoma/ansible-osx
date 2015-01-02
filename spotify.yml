@@ -1,5 +1,5 @@
 ---
 
 - name: install spotify
-  command: brew cask install spotify
+  homebrew_cask: name=spotify
 

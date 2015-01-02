@@ -1,4 +1,4 @@
 ---
 - name: install intellij idea ultimate edition
-  command: brew cask install intellij-idea
+  homebrew_cask: name=intellij-idea
 
