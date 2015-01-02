@@ -1,15 +1,7 @@
 battleschool:
-
-  #
-  # should have
-  #
-  shell_tools:     yes
   editor_tools:    yes
-
-  #
-  # developer tools
-  #
   git:             yes
+  home:            yes
   homebrew:
     upgrade_all:   no
   homebrew_extras: yes
@@ -17,18 +9,16 @@ battleschool:
   libreoffice:     yes
   network_tools:   yes
   nodejs:          yes
+  openzfs:         no
   packer:          yes
+  shell_tools:     yes
   sourcetree:      yes
+  spotify:         yes
   sublimetext:     yes
-  vagrant:         
+  vagrant:
     plugins:
       - vagrant-cachier
       - vagrant-hostmanager
       - vagrant-digitalocean
       - vagrant-vbguest
   virtualbox:      yes
-
-  #
-  # nice to have:
-  #
-  spotify:         yes

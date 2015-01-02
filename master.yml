@@ -1,5 +1,8 @@
 - name: Build my Workstation <3 <3 <3 :)
-  hosts: workstation
+  hosts:
+    - mac_box
+    - linux_box
+
   tasks:
 
 ################################################
@@ -12,6 +15,14 @@
     when: battleschool.homebrew.upgrade_all
 
 ################################################
+# Low Level Stuff
+################################################
+
+  - include: openzfs.yml
+    tags: openzfs
+    when: battleschool.openzfs
+
+################################################
 # Base Tools
 ################################################
 
@@ -21,12 +32,15 @@
 
   - include: shell_tools.yml
     tags: shell_tools
+    when: battleschool.shell_tools
 
   - include: editor_tools.yml
     tags: editor_tools
+    when: battleschool.editor_tools
 
   - include: network_tools.yml
     tags: network_tools
+    when: battleschool.network_tools
 
   - include: git.yml
     tags: git
@@ -109,3 +123,4 @@
 
   - include: home.yml
     tags: home
+    when: battleschool.home
