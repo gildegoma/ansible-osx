@@ -1,4 +1,6 @@
-battleschool:
+software:
+test2: yes
+test2: yes
   editor_tools:    yes
   git:             yes
   home:            yes
@@ -9,7 +11,7 @@ battleschool:
   libreoffice:     yes
   network_tools:   yes
   nodejs:          yes
-  openzfs:         no
+  openzfs:         yes
   packer:          yes
   shell_tools:     yes
   sourcetree:      yes

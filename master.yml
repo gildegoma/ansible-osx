@@ -12,15 +12,15 @@
   - name: update homebrew formulaes and upgrade already installed software
     homebrew: update_homebrew=yes upgrade_all=yes
     tags: homebrew_upgrade_all
-    when: battleschool.homebrew.upgrade_all
+    when: software.homebrew.upgrade_all
 
 ################################################
 # Low Level Stuff
 ################################################
 
-  - include: openzfs.yml
+  - include: "{{ os }}/openzfs.yml"
     tags: openzfs
-    when: battleschool.openzfs
+    when: software.openzfs
 
 ################################################
 # Base Tools
@@ -28,23 +28,23 @@
 
   - include: homebrew_extras.yml
     tags: homebrew_extras
-    when: battleschool.homebrew_extras
+    when: software.homebrew_extras
 
   - include: shell_tools.yml
     tags: shell_tools
-    when: battleschool.shell_tools
+    when: software.shell_tools
 
   - include: editor_tools.yml
     tags: editor_tools
-    when: battleschool.editor_tools
+    when: software.editor_tools
 
   - include: network_tools.yml
     tags: network_tools
-    when: battleschool.network_tools
+    when: software.network_tools
 
   - include: git.yml
     tags: git
-    when: battleschool.git
+    when: software.git
     vars:
       git:
         user:
@@ -53,7 +53,7 @@
 
   - include: nodejs.yml
     tags: nodejs
-    when: battleschool.nodejs
+    when: software.nodejs
     vars:
       nodejs:
         global_packages:
@@ -64,7 +64,7 @@
 
   - include: sourcetree.yml
     tags: sourcetree
-    when: battleschool.sourcetree
+    when: software.sourcetree
 
 ################################################
 # Virtualization Tools
@@ -72,11 +72,11 @@
 
   - include: packer.yml
     tags: packer
-    when: battleschool.packer
+    when: software.packer
 
   - include: virtualbox.yml
     tags: virtualbox
-    when: battleschool.virtualbox
+    when: software.virtualbox
     vars:
       virtualbox:
         version: 4.3.20
@@ -84,7 +84,7 @@
 
   - include: vagrant.yml
     tags: vagrant
-    when: battleschool.vagrant
+    when: software.vagrant
     vars:
       vagrant:
         version: 1.7.1
@@ -95,11 +95,11 @@
 
   - include: intellij_idea.yml
     tags: intellij_idea
-    when: battleschool.intellij_idea
+    when: software.intellij_idea
 
   - include: sublimetext.yml
     tags: sublimetext
-    when: battleschool.sublimetext
+    when: software.sublimetext
 
 ################################################
 # Mandatory Optionals
@@ -107,7 +107,7 @@
 
   - include: spotify.yml
     tags: spotify
-    when: battleschool.spotify
+    when: software.spotify
 
 ################################################
 # Office Material
@@ -115,7 +115,7 @@
 
   - include: libreoffice.yml
     tags: libreoffice
-    when: battleschool.libreoffice
+    when: software.libreoffice
 
 ################################################
 # Last Things
@@ -123,4 +123,4 @@
 
   - include: home.yml
     tags: home
-    when: battleschool.home
+    when: software.home

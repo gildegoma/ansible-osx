@@ -7,8 +7,8 @@
 
 - name: install vagrant plugins
   command: vagrant plugin install {{ item }}
-  with_items: battleschool.vagrant.plugins
+  with_items: software.vagrant.plugins
 
 - name: update vagrant plugins
   command: vagrant plugin update
-  when: battleschool.vagrant.plugins
+  when: software.vagrant.plugins

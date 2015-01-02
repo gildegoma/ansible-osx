@@ -1,3 +1,4 @@
 #!/bin/bash
 
-ansible-playbook -vv -K -c local -i inventory/mac --module-path=/usr/share/battleschool/library --tags=$1 master.yml
+OS=macosx
+ansible-playbook -vv -K -c local -e os=$OS -i inventory/$OS --module-path=/usr/share/battleschool/library --tags=$1 master.yml
